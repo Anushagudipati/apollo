@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.9
+
+  pre_build:
+    commands:
+      - echo "Setting up SSH key..."
+    
+  build:
+    commands:
+      - echo "Connecting to Private EC2 via Bastion..."
+  post_build:
+    commands:
+      - echo "Deployment to EC2 complete!"

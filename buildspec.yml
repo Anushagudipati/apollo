@@ -14,4 +14,4 @@ phases:
       - echo "Connecting to Private EC2 via Bastion..."
   post_build:
     commands:
-      - echo "Deployment to EC2 complete!"
+      - echo "Deployment to EC2 complete!................"
